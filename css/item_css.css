@@ -1,0 +1,131 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Overpass:wght@600;800&display=swap');
+
+body{
+    margin: 0;
+    /*font-family: 'Oswald', sans-serif;*/
+    font-family: 'Overpass', sans-serif;
+}
+
+.bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    height: max-content;
+    /*height: auto;*/
+    padding: 20px;
+    /*min-height: 58vh;*/
+    position: sticky;
+    margin: 0;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.08);
+    z-index: 999;
+}
+
+.grid_con{
+    
+    margin: auto;
+    display: flex;
+    justify-content: center;
+
+
+
+    
+    
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);*/
+}
+
+.item_container{
+    padding: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(48%, 2fr)); 
+    gap: 20px;
+    background-color: #ececec;
+    height: max-content;
+    position: relative;
+  
+}
+
+.item_img_container{
+    
+    padding: 5vw;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.item_img{
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+
+
+.item_info_container{
+    text-align: center;
+
+    background-color: white;
+    padding: 5vw;
+    height: max-content;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
+    
+}
+
+.if_stock{
+    color:#a9a9a9; 
+    font-size: 15px;
+    
+}
+
+.item_name{
+    color: black; 
+    margin-top: 20px;
+    font-size: 30px; 
+    font-weight: 800;
+}
+
+.item_short_desc{
+    font-size: 18px; 
+}
+
+.item_full_desc{
+    color:#a9a9a9; 
+}
+
+.item_brand{
+    color:#a9a9a9; 
+    font-size: 15px;
+    
+}
+
+.item_price{
+    padding: 20px;
+    font-size: 18px;
+}
+
+.item_addtocart{
+    background-color: #00022e;
+    font-family: 'Overpass', sans-serif;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    width: 200px;
+    border: none;
+    position: relative;
+}
+
+.item_select_qty{
+    height:18px; 
+    font-size: 17px; 
+    font-family: 'Overpass', sans-serif;
+}
+
+.line{
+    background-color: #00022e;
+    width: 300px;
+    height: 5px;
+    margin:auto;
+}

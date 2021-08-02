@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+button{
+    font-family: 'Poppins', sans-serif;
+}
+
+html body{
+    background-color: #F9F9F9;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    /*font-weight: 400;*/
+}
+
+.con{   
+    background-color: white;
+
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.18);
+
+}
+
+.header_about{
+    background-color: white;
+}
+
+.sub_header li, .phone_email{
+    align-items: center;
+    list-style: none;
+}
+
+.sub_header{
+    font-size: 12px;
+}
+
+.main_header{
+
+}
