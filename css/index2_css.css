@@ -153,16 +153,12 @@ html body{
 
 .sort li{
     border:none;
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
 
-.readmore{
-    background-color: #f0f0f0;
-    
-    
-    border-radius: 20px;
-
-    display: flex;
-    flex-direction: column;
+.readmore button:focus{
+    outline: none !important;
     
 }
 
@@ -213,4 +209,39 @@ html body{
     border-radius: 15px;
 
     font-weight: 600;
+}
+
+.brand_dropdown button{
+    background-color: #F9F9F9;
+    color: black;
+
+    width: max-content;
+    padding:15px;
+    margin-top: 10px;
+
+    font-size: 15px;
+
+    border: none;
+    border-radius: 15px;
+
+    font-weight: 600;
+}
+
+.brand_dropdown button:focus{
+    outline: none !important;
+}
+
+.card{
+    
+    background-color: blue;
+
+}
+
+.add_cart{
+    font-size: 15px;
+    color: white;
+
+    background-color: blue;
+    padding: 10px 15px;
+    border-radius: 10px;
 }
