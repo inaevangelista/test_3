@@ -8,7 +8,8 @@ html body{
     background-color: #F9F9F9;
     font-family: 'Nunito', sans-serif;
     margin: 0;
-    color: black
+    color: black;
+    font-size: 13px;
     /*font-weight: 400;*/
 }
 
@@ -122,15 +123,12 @@ html body{
     padding:2px;
 }
 
-.home_body{
-    width: 100%  ;
-    height: 1000px;
-    background-color: white;
-}
-
 .content1{
     height: 100px;
     background-color: white;
+
+    position: relative;
+    width: inherit;
 }
 
 .category{
@@ -143,4 +141,77 @@ html body{
 
 .category button:focus{
     outline: none !important;
+}
+
+.home_body{
+    width: inherit;
+    height: 1000px;
+    background-color: white;
+
+    
+}
+
+.sort li{
+    border:none;
+}
+
+.readmore{
+    background-color: #f0f0f0;
+    width: 100px;
+    height: 50px;
+    
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.readmore{
+    background-color: #f0f0f0;
+    width: 420px;
+    height: 300px;
+    
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.readmore_subheading{    
+    padding-top: 45px;
+    padding-left: 25px;
+    text-align: left;
+
+    font-weight: 600;
+}
+
+.readmore_heading{
+    padding-top: 15px;
+    padding-left: 25px;
+    text-align: left;
+
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.readmore button{
+
+    position: relative;
+    background-color: #F9F9F9;
+    padding:15px;
+
+    margin-top: 90px;
+    margin-left: 25px;
+
+    width: 180px;
+
+    font-size: 18px;
+
+    border-color:black;
+    border-width: 3px;
+    border-radius: 15px;
+
+    font-weight: 600;
 }
