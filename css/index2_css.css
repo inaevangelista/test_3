@@ -1,40 +1,121 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap');
 
 button{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 html body{
     background-color: #F9F9F9;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nunito', sans-serif;
     margin: 0;
     /*font-weight: 400;*/
 }
 
-.con{   
-    background-color: white;
+.sub_header button:focus{
+    outline: none !important;
+    outline-width: 0px;
+    
+}
 
+.con{
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.18);
+    max-width: 1200px;
 
+    margin: auto;
 }
 
-.header_about{
-    background-color: white;
-}
-
-.sub_header li, .phone_email{
-    align-items: center;
-    list-style: none;
+.navbar{
+    padding: 0px;
 }
 
 .sub_header{
-    font-size: 12px;
+    background-color: white;
+    height: max-content;
+
+    align-items: center;
+    font-size: 10px;
+
+    
 }
+
+.sub_header_line{
+    margin: 0 20px;
+    height: 2px;
+    background-color: #F9F9F9;
+}
+
+.icon-arrow-down{
+    background-color: black;
+}
+
 
 .main_header{
+    background-color: white;
 
+    font-size: 12px;
+
+}   
+
+.companyname{
+    font-size: 30px;
+    font-weight: 800;
+
+    padding-right: 30px;
 }
 
-.icon-bar{
-    background-color: black;
+.main_header_line{
+    width: 100%;
+    background-color: white;
+    padding-top: 10px;
+}
+
+.search{
+    margin-right: 0px;
+}
+
+.search input{
+    position: relative;
+    height: 30px;
+    width: 150px;
+
+    top: 0px;
+
+    /* C1/H */
+
+    background: #F9F9F9;
+    /* C1/D */
+
+    border: 1px solid #D1D1D1;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    padding-right: 30px;
+    padding-left: 10px;
+}
+
+.search input:focus{
+    outline: none;
+}
+
+.search button{
+    background-color:transparent;
+    border: none;
+
+    position: relative;
+
+    left: -30px;
+}
+
+.search form{
+    display:flex;
+    flex-direction:row;
+    
+
+  /* I've used padding so you can see the edges of the elements. */
+    padding:2px;
+}
+
+.home_body{
+    height: 1000px;
+    background-color: white;
 }
