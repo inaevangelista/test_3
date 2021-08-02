@@ -34,8 +34,6 @@ html body{
 
     align-items: center;
     font-size: 10px;
-
-    
 }
 
 .sub_header_line{
@@ -53,6 +51,12 @@ html body{
     background-color: white;
 
     font-size: 12px;
+
+    z-index: 999;
+
+    position: sticky;
+    position: -webkit-sticky;
+    top: -1px;
 
 }   
 
