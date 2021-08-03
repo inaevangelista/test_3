@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap');
 
 button{
     font-family: 'Nunito', sans-serif;
@@ -10,6 +10,7 @@ html body{
     margin: 0;
     color: black;
     font-size: 13px;
+    font-weight: 600;
     /*font-weight: 400;*/
 }
 
@@ -59,8 +60,9 @@ html body{
     position: sticky;
     position: -webkit-sticky;
     top: -1px;
-
 }   
+
+
 
 .companyname{
     font-size: 23px;
@@ -155,6 +157,7 @@ html body{
     border:none;
     text-decoration: underline;
     text-underline-offset: 2px;
+    color: #000066;
 }
 
 .readmore button:focus{
@@ -180,6 +183,7 @@ html body{
     text-align: left;
 
     font-weight: 800;
+    color: #000066;
 }
 
 .readmore_heading{
@@ -195,7 +199,7 @@ html body{
 
     position: relative;
     background-color: #F9F9F9;
-    padding:15px;
+    padding:10px;
 
     margin-top: 90px;
     margin-left: 25px;
@@ -204,7 +208,8 @@ html body{
 
     font-size: 18px;
 
-    border-color:black;
+    border-color:#000066;
+    border-style: solid;
     border-width: 3px;
     border-radius: 15px;
 
@@ -216,7 +221,7 @@ html body{
     color: black;
 
     width: max-content;
-    padding:15px;
+    padding: 10px 15px;
     margin-top: 10px;
 
     font-size: 15px;
@@ -231,10 +236,8 @@ html body{
     outline: none !important;
 }
 
-.card{
-    
-    background-color: blue;
-
+.brand_dropdown .dropdown-toggle::after {
+    display: none;
 }
 
 .add_cart{
@@ -244,4 +247,23 @@ html body{
     background-color: blue;
     padding: 10px 15px;
     border-radius: 10px;
+}
+
+.product_card button{
+
+    background-color: #000066;
+    color: white;
+
+    width: max-content;
+    padding: 5px 15px;
+    margin-top: 10px;
+
+    font-size: 15px;
+
+    border: solid 3px #00003a;
+    
+    border-radius: 15px;
+
+    font-weight: 800;
+    
 }
