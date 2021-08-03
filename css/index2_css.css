@@ -179,7 +179,7 @@ html body{
     padding-left: 25px;
     text-align: left;
 
-    font-weight: 600;
+    font-weight: 800;
 }
 
 .readmore_heading{
@@ -187,7 +187,7 @@ html body{
     padding-left: 25px;
     text-align: left;
 
-    font-weight: 600;
+    font-weight: 800;
     font-size: 25px;
 }
 
@@ -208,7 +208,7 @@ html body{
     border-width: 3px;
     border-radius: 15px;
 
-    font-weight: 600;
+    font-weight: 800;
 }
 
 .brand_dropdown button{
