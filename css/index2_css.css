@@ -253,16 +253,9 @@ html body{
     display: none;
 }
 
-.add_cart{
-    font-size: 15px;
-    color: white;
 
-    background-color: blue;
-    padding: 10px 15px;
-    border-radius: 10px;
-}
 
-.product_card button{
+.product_card button, .modal-footer button{
 
     background-color: #000066;
     color: white;
@@ -273,10 +266,101 @@ html body{
 
     font-size: 15px;
 
-    border: solid 3px #00003a;
+    border: none;
     
     border-radius: 15px;
 
     font-weight: 800;
+}
+
+.product_card button:focus{
+    outline: none !important;
+}
+
+
+.dropdown-cart-icon .dropdown-menu{
+    
+    padding: 20px;
     
 }
+
+ul.dropdown-cart{
+    min-width:250px;
+    border: 2px solid #D1D1D1;
+    padding: 2px;
+    margin: 7px;
+    margin-top: 11px;
+}
+
+.ul.dropdown-cart button{
+    color: black;
+}
+
+.dropdown-cart-icon .dropdown-toggle::after {
+    display: none;
+}
+
+ul.dropdown-cart li .item{
+    display:block;
+    padding:10px 5px;
+    margin: 3px 0;
+
+    border-bottom: 2px solid #D1D1D1;
+    
+}
+ul.dropdown-cart li .item:hover{
+    background-color:#c3c5c5;
+    
+}
+ul.dropdown-cart li .item:after{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+ul.dropdown-cart li .item-left{
+    float:left;
+}
+ul.dropdown-cart li .item-left img,
+ul.dropdown-cart li .item-left span.item-info{
+    float:left;
+}
+ul.dropdown-cart li .item-left span.item-info{
+    margin-left:10px;   
+}
+ul.dropdown-cart li .item-left span.item-info span{
+    display:block;
+}
+ul.dropdown-cart li .item-right{
+    float:right;
+}
+ul.dropdown-cart li .item-right button{
+    margin-top:14px;
+} 
+
+.to_checkout a{
+    background-color: #000066;
+    padding: 10px 15px;
+
+    color: white;
+
+    border-radius: 10px;
+    
+}
+
+li.to_checkout{
+    padding: 20px 0px;
+}
+
+.item-right button:focus{
+    outline: none !important;
+}
+
+.modal-footer button:focus{
+    outline: none !important;
+}
+
+
