@@ -134,11 +134,24 @@ html body{
 }
 
 .category{
-    background-color:#F9F9F9;
+    background-color:#000066;
 }
 
+
 .category a{
+    color: white;
+    font-weight: 700;
+
+    padding: 3px 100px;
+}
+
+.category li{
+    padding: 0px 20px;
+}
+
+.category .dropdown-menu a {
     color: black;
+    font-weight: 700;
 }
 
 .category button:focus{
