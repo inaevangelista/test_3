@@ -1,0 +1,159 @@
+.cover_img{
+
+}
+#hero {
+    width: 100%;
+    height: 75vh;
+    background: url("../images/water-splash.jpg") top left;
+    background-size: cover;
+    position: relative;
+  }
+  
+  #hero:before {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  #hero .container {
+    position: relative;
+    padding-top: 0px;
+  }
+  
+  @media (max-width: 992px) {
+    #hero .container {
+      padding-top: 58px;
+    }
+  }
+  
+  #hero h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 30px;
+    color: black;
+  }
+  
+  #hero h1 span {
+    color: #106eea;
+  }
+  
+  #hero h2 {
+    color: #555555;
+    margin: 5px 0 30px 0;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 20px;
+  }
+  
+  #hero .btn-view-products, 
+  #hero .btn-get-started,
+  #get_started a {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 28px;
+    border-radius: 10px;
+    transition: 0.5s;
+    color: white;
+    background-color: #000066;
+  }
+  
+  
+
+  #hero .btn-about-us {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 28px;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: black;
+    background-color: transparent;
+    margin-left: 20px;
+  }
+  
+  #hero .btn-about-us:hover {
+    background: #000066;
+    color: white;
+  }
+  
+
+
+
+  #test1::before,
+  #test2::before {
+  display: block;
+  content: " ";
+  margin-top: -65px;
+  height: 65px;
+  visibility: hidden;
+  }
+
+
+.readmore button:focus{
+    outline: none !important;
+    
+}
+
+.readmore{
+    background-color: white;
+    min-width: 100%;
+    padding-right: 30px;
+    height: 300px;
+    
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.readmore_subheading{    
+    padding-top: 45px;
+    padding-left: 25px;
+    text-align: left;
+
+    font-weight: 800;
+    color: #000066;
+}
+
+.readmore_heading{
+    padding-top: 15px;
+    padding-left: 25px;
+    text-align: left;
+
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.readmore button{
+
+    position: relative;
+    background-color: white;
+    padding:10px;
+
+    max-width: 180px;
+
+    margin-top: 90px;
+    margin-left: 25px;
+
+    
+
+    font-size: 18px;
+
+    border-color:#000066;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 15px;
+
+    font-weight: 800;
+}

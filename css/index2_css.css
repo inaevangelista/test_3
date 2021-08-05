@@ -14,6 +14,10 @@ html body{
     /*font-weight: 400;*/
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .sub_header button:focus{
     outline: none !important;
     outline-width: 0px;
@@ -55,14 +59,17 @@ html body{
 
     font-size: 12px;
 
-    z-index: 999;
+    z-index: 10;
 
     position: sticky;
     position: -webkit-sticky;
     top: -1px;
 }   
 
-
+.main_header a, .main_header a:hover{
+    color: black;
+    text-decoration: none;
+}
 
 .companyname{
     font-size: 23px;
@@ -173,61 +180,6 @@ html body{
     color: #000066;
 }
 
-.readmore button:focus{
-    outline: none !important;
-    
-}
-
-.readmore{
-    background-color: #f0f0f0;
-    width: 420px;
-    height: 300px;
-    
-    border-radius: 20px;
-
-    display: flex;
-    flex-direction: column;
-    
-}
-
-.readmore_subheading{    
-    padding-top: 45px;
-    padding-left: 25px;
-    text-align: left;
-
-    font-weight: 800;
-    color: #000066;
-}
-
-.readmore_heading{
-    padding-top: 15px;
-    padding-left: 25px;
-    text-align: left;
-
-    font-weight: 800;
-    font-size: 25px;
-}
-
-.readmore button{
-
-    position: relative;
-    background-color: #F9F9F9;
-    padding:10px;
-
-    margin-top: 90px;
-    margin-left: 25px;
-
-    width: 180px;
-
-    font-size: 18px;
-
-    border-color:#000066;
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 15px;
-
-    font-weight: 800;
-}
 
 .brand_dropdown button{
     background-color: #F9F9F9;
@@ -276,6 +228,8 @@ html body{
 .product_card button:focus{
     outline: none !important;
 }
+
+
 
 
 .dropdown-cart-icon .dropdown-menu{

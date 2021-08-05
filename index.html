@@ -25,7 +25,7 @@
             <div class="main_header_line"></div>
             <div class="main_header">
                 <nav class="navbar navbar-expand-lg">
-                    <div class="companyname">COMPANY ENTERPRISES</div>
+                    <a href="landing.html"class="companyname">COMPANY ENTERPRISES</a>
                     <div class="form-inline my-0 my-lg-0 mr-auto search">
                         <form action="">   
                             <input class="form-control mr-auto"type="text" method="GET" name="search" placeholder="Search">
@@ -74,11 +74,7 @@
                                 <li class="to_checkout"><a href="#">Check Out</a></li>
                             </ul>
                         </div>
-                    </div> 
-
-                
-                              
-                            
+                    </div>   
                 </nav>
             </div>
             <div class="main_header_line"></div>
@@ -90,55 +86,54 @@
                 <div class="collapse navbar-collapse" id="category_list">
                     <ul class="navbar-nav navbar-right">
 
-                        <li>
-                            <a class="nav-link" href="">Category 1</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="">Category 2</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="">Category 3</a>
-                        </li>
-                        
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown category-dropdown-nav">
                             <a class="nav-link dropdown-toggle" href="#" id="category_dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                More
+                                Category
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="category_dropdown">
-                                <a class="dropdown-item" href="#">Category 4</a>
-                                <a class="dropdown-item" href="#">Category 5</a>
+                        
+                            <div class="dropdown-menu text-center" aria-labelledby="category_dropdown">
+                                <a class="dropdown-item px-2" href="#">Category 1</a>
+                                <a class="dropdown-item px-2" href="#">Category 2</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item px-2" href="#">View all</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown category-dropdown-nav">
+                            <a class="nav-link dropdown-toggle" href="#" id="category_dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Sort by
+                            </a>
+                            <div class="dropdown-menu text-center " aria-labelledby="category_dropdown">
+                                <a class="dropdown-item px-2" href="#">Alphabetical (A-Z)</a>
+                                <a class="dropdown-item px-2" href="#">Alphabetical (Z-A)</a>
+                                <a class="dropdown-item px-2" href="#">Price Ascending (Low-High)</a>
+                                <a class="dropdown-item px-2" href="#">Price Descending (High-Low)</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">View all</a>
                             </div>
                         </li>
+
+                        <li class="nav-item dropdown category-dropdown-nav">
+                            <a class="nav-link dropdown-toggle" href="#" id="category_dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Brand
+                            </a>
+                            <div class="dropdown-menu text-center" aria-labelledby="category_dropdown">
+                                <a class="dropdown-item px-2" href="#">Brand 1</a>
+                                <a class="dropdown-item px-2" href="#">Brand 2</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="category_dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Services
+                            </a>
+                        </li>
                     </ul>  
                 </div>
             </nav>
-            <div class="container-fluid " style="background-color: white;">
-                <div class="row py-3">
-                    <div class="col-md-3 pl-3 pr-0 py-3 sort">
-                        
-                        <div style="margin-left: 20px; font-size: 15px; font-weight: 800; padding-bottom: 10px;">
-                            Sort by </div>
-                        <ul class="list-group">
-                            <li class="list-group-item">Alphabetical (A-Z)</li>
-                            <li class="list-group-item">Alphabetical (Z-A)</li>
-                            <li class="list-group-item">Price Ascending (Low-High)</li>
-                            <li class="list-group-item">Price Descending (High-Low)</li>
-                            <li class="list-group-item">
-                            <div class="dropdown brand_dropdown">
-                                <button class="dropdown-toggle" style="font-weight: 800;"type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Brand <i class="fa fa-angle-right px-2" style="font-weight: 800; font-size: 18px;"></i>
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Brand 1</a>
-                                    <a class="dropdown-item" href="#">Brand 2</a>
-                                    <a class="dropdown-item" href="#">Brand 3</a>
-                                </div>
-                            </div></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-9 d-flex justify-content-center px-1">
+            <!--
+            <div class="container-fluid" style="background-color: white;">
+                <div class="row py-3 px-0 justify-content-center">
+                    <div class="col-md-12 d-flex justify-content-center">
                         <div class="container">
                             <div class="row d-flex justify-content-center" style="overflow:hidden;min-width:100%;">
                                 <div class="col-6 py-3 d-flex justify-content-center" style="min-width: 420px">
@@ -168,9 +163,9 @@
                     </div>
                 </div>
             </div>
-        
+        -->
             
-            <div class="container-fluid content-row py-5" style="background-color: white;">
+            <div class="container-fluid content-row py-5 px-5" style="background-color: white;">
                 <div class="row d-flex justify-content-center">
 
                     <div class="col-sm-4 col-lg-3 py-2">
