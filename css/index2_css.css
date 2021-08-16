@@ -317,4 +317,42 @@ li.to_checkout{
     outline: none !important;
 }
 
+#product-pic {
+    object-fit: cover;
+}
 
+.product-card {
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 5px 10px;
+    align-content: center;
+}
+
+#card-style {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #D1D1D1;
+    box-sizing: border-box;
+    border-radius: 12px;
+
+    position: static;
+    width: 269px;
+    height: 255px;
+    left: 888px;
+    top: 0px;
+}
+
+#product-title {
+    color: black;
+    margin-top: 10px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+}
