@@ -447,10 +447,20 @@ button:hover{
     transition: 0.2s;
  }
 
- a:hover{
+a:hover{
     cursor: pointer;
     opacity: 0.8;
     transition: 0.2s;
+    color: black;
 }
+
+.product_con a{
+    color: black;
+}
+
+a:active{
+    color: black;
+}
+
 
 
