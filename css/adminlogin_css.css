@@ -95,7 +95,7 @@ html{
     align-items: center;
     justify-content: center;
     position: static;
-    height: 90vh;
+    height: fit-content;
 }
 
 .loginbox {

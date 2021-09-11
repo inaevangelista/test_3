@@ -2,34 +2,156 @@
 
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 30px 49px;
+    align-items: center;
+    align-self: center;
+    padding-bottom: 80px;
 
-    position: static;
     background: #FFFFFF;
 }
 
 .products-sec h3 {
+    position: relative;
+    left: 30px;
     font-style: normal;
     font-weight: 500;
     font-size: 30px;
 }
 
 .products-sec div {
-    margin-right: 10px;
+    margin-right: 27px;
+    margin-bottom: 27px;
 }
 
-#prod-row{
-    /* Inside Auto Layout */
+#top-texts {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    left: 40px;
+    top: 30px;
+}
+
+/* .edit-brand {
     flex: none;
+    order: 1;
     flex-grow: 0;
-    margin: 20px 5px;
+    margin: 0px 0px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+} */
+
+/* .edit-cat {
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+} */
+
+#edit-cat-text, #edit-brand-text {
+    color: #000066;
+    margin-top: 12px;
+
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.edit-bc {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: fit-content;
+    height: 29px;
+    right: 0px;
+}
+
+/* Row of Products */
+
+#prod-row{
+    position: relative;
+    width: fit-content;
+    left: 82px;
+    top: 50px;
+}
+
+#card-style {
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #D1D1D1;
+    box-sizing: border-box;
+    border-radius: 12px;
+
+    position: relative;
+    height: 290px;
+    left: 0px;
+    top: 0px;
+}
+
+#card-style :hover{
+    text-decoration: none;
+}
+
+.product-card-details {
+    margin: 10px 10px;
+    /* height: 223px; */
+}
+
+.product-card-details div {
+    margin-bottom: 10px;
+}
+
+.product-pic {
+    position: static;
+    width: 237px;
+    height: 180px;
+    left: 16px;
+    top: 16px;
+}
+
+#product-pic {
+    object-fit: cover;
+}
+
+#product-title {
+    color: black;
+
+    font-style: normal;
+    font-weight: 800;
+    height: fit-content;
+    font-size: 20px;
+}
+
+#product-model {
+    font-size: 14px;
+    font-weight: 700;
+    color: #000066;
 }
 
 #add-icon {
-    font-size: 40px;
-    color:black;
+    position: relative;
+    margin-top: 80px;
+    margin-bottom: 70px;
+    font-size: 120px;
+    width: 74px;
+    height: 74px;
+    color:rgba(0, 0, 0, 0.62);
+
+    left: calc(50% - 74px/2);
+    top: calc(50% - 74px/2);
 }
+
+/* Edit and Add Products Modal */
 
 #edit-row, #add-row {
     display: flex;
@@ -39,7 +161,11 @@
     padding: 0px;
 }
 
-#editprodname, #editprodcat, #prodname, #prodcat {
+#edit-row input, #add-row input, #edit-row select, #add-row select, #edit-row textarea, #add-row textarea {
+    outline: none;
+}
+
+#editprodname, #editprodcat, #prodname, #prodcat, #editprodmodel, #prodmodel {
     width: 362px;
     height: 50px;
 
@@ -58,11 +184,9 @@
     border: 1px solid #000000;
     box-sizing: border-box;
     border-radius: 12px;
-
-    /* display: flex;
-    flex-direction: row;
-    align-items: flex-start; */
-    padding: 0px 14px 0px;
+    
+    resize: none;
+    padding: 10px 14px 0px;
 }
 
 input[type="submit"]{
@@ -84,46 +208,6 @@ input[type="submit"]:hover{
     border-color: #000066;
     transition: .5s;
 }
-
-/* #product-pic {
-    object-fit: cover;
-}
-
-.product-card {
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-    margin: 5px 10px;
-    align-content: center;
-}
-
-#card-style {
-    display: flex;
-    flex-direction: column;
-    padding: 16px;
-
-    background: #FFFFFF;
-
-    border: 1px solid #D1D1D1;
-    box-sizing: border-box;
-    border-radius: 12px;
-
-    position: static;
-    width: 269px;
-    height: 255px;
-    left: 888px;
-    top: 0px;
-}
-
-#product-title {
-    color: black;
-    margin-top: 10px;
-
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-} */
 
 #btndeleteprod {
     position:static;
@@ -160,3 +244,76 @@ input[type="submit"]:hover{
     justify-content: center;
     align-items: center;
 }
+
+/* Edit Categories and Brands Modal */
+
+.catmodal div, .brandmodal div {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.catmodal label, .brandmodal label {
+    font-weight: 500;
+}
+
+#newcat, #newbrand {
+    width: fit-content;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid black;
+    outline: none;
+}
+
+.custom-cat, .custom-brand {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.custom-cat label, .custom-brand label {
+    width: 120px;
+    height: 31px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: inset 0 0 0 0 #CA0D0D;
+    transition: ease-out 0.3s;
+
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 10px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-cat label:hover, .custom-brand label:hover {
+    color: white;
+    transition: ease-out 0.3s;
+    font-weight: 500;
+    font-size: 14px;
+
+    box-shadow: inset 120px 0 0 0 #CA0D0D;
+    cursor: pointer;
+}
+
+.cat-del, .brand-del {
+    visibility: hidden;
+    position: absolute;
+}
+
+.cat-del:checked + label, .brand-del:checked + label {
+    color:white;
+    box-shadow: inset 120px 0 0 0 #CA0D0D;
+    outline: none;
+}
+
+/* .custom-cat ul{
+    list-style-type: none;
+} */
